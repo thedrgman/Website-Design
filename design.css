@@ -1,0 +1,197 @@
+body {
+  font-family: 'Allura', 'Helvetica';
+  font-weight: 400;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-image: url("white texture.jpg");
+}
+
+.page {
+  width: 85%;
+  margin: 0px auto;
+}
+
+.menu {
+  width: 85%;
+  margin: 0px auto;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+  text-align: center;
+  float: center;
+
+}
+
+.logo {
+  padding: 0;
+  object-position: top;
+}
+
+a {
+  font-family: 'Allura', 'Helvetica';
+  font-weight: 400;
+  color: #A2A2A2;
+  text-decoration: none;
+  font-size: 40px;
+}
+
+a :hover {
+  border-bottom: 2px;
+}
+
+.links{
+  width: 100%;
+  position: sticky !important;
+  top: 0;
+  height: 4.5rem;
+  line-height: 4.5rem;
+  display: flex;
+  min-width: 763px;
+}
+
+.header_background {
+  width: 100%;
+  position: sticky;
+  top: 0px;
+  z-index: 10;
+  background-color: white;
+}
+
+.links ul {
+  /* display: inline-block; */
+  padding: 0;
+  margin: 0;
+}
+
+.links li {
+  float: left;
+  text-decoration: none;
+  list-style: none;
+  margin: auto 5px;
+  padding: 0 20px;
+}
+
+.links a li:hover {
+  color: #686868;
+}
+
+.opener{
+  width: 40%;
+}
+
+.opener {
+  margin: 0;
+  border: 1px solid #ccc;
+  width: 50%;
+  float: center;
+}
+
+.opener:hover {
+  border: 1px solid #777;
+}
+
+.desc:hover {
+  color: #686868;
+}
+
+.opener img {
+  width: 100%;
+  height: auto;
+}
+
+.desc {
+  padding: 15px;
+  text-align: center;
+  font-size: 50px;
+}
+
+div p {
+  font-size: 30px;
+  color: #A2A2A2;
+}
+
+.section {
+  background-color: white;
+}
+
+.footer {
+  padding: 30px;
+}
+
+.footer_background {
+  background-color: white;
+}
+
+/* Contact Styles */
+.box {
+  width: 50%;
+  flex: 50%;
+}
+
+.contact {
+  margin: 0.5rem 0rem;
+}
+
+.contact_form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+/* Contact Styles End */
+
+.photos {
+  width: 90%;
+  display: flex;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+  display: flex !important;
+  margin: 1rem;
+  width: 100%
+  justify-content:; flex-start;
+  flex-wrap: wrap;
+  place-content: start space-evenly;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+  display: flex !important;
+  flex-wrap: wrap;
+  width: 25%
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+  padding: 4px
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
